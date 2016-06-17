@@ -1,2 +1,5 @@
 ---
 # tasks file for ansible-upstart-unicorn
+- name: Unicorn | Copy init template to init.d dir
+  template: src=unicorn_upstart dest=/etc/init/unicorn.conf owner=root group=root
+  sudo: yes

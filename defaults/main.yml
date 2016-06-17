@@ -1,2 +1,5 @@
 ---
 # defaults file for ansible-upstart-unicorn
+ansible_upstart_unicorn_user: '{{ deployer }}'
+ansible_upstart_unicorn_rack_env: 'deployment'
+ansible_upstart_unicorn_app_path: '/srv/{{ app_name }}'
